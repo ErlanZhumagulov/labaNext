@@ -1,5 +1,4 @@
 name: Java CI with Maven
-
 on:
   pull_request:
     branches: [ "*" ]
@@ -18,5 +17,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-     #-Dtest=<Имя класса где тесты лежат>
       run: mvn -Dtest=HelloControllerTest
